@@ -1,0 +1,1493 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#10291f">
+
+<title>Sri Lanka Army Signal Corps | Holiday Bungalows</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+
+<style>
+:root {
+  --green:#10291f;
+  --green2:#1b4030;
+  --gold:#d8b36a;
+  --cream:#f7f6f1;
+  --white:#ffffff;
+  --text:#25352c;
+  --muted:#7b847d;
+  --border:#e5e8e1;
+  --red:#c94c45;
+}
+
+* {
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+html {
+  scroll-behavior:smooth;
+}
+
+body {
+  font-family:'DM Sans',sans-serif;
+  background:var(--cream);
+  color:var(--text);
+}
+
+button,input,select {
+  font:inherit;
+}
+
+button {
+  cursor:pointer;
+}
+
+/* NAVIGATION */
+
+header {
+  background:var(--green);
+  color:white;
+  padding:16px 7%;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  position:sticky;
+  top:0;
+  z-index:100;
+  box-shadow:0 3px 15px #0002;
+}
+
+.brand {
+  display:flex;
+  align-items:center;
+  gap:12px;
+}
+
+.brand-logo {
+  width:47px;
+  height:47px;
+  border:1px solid var(--gold);
+  border-radius:50%;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  color:var(--gold);
+  font-size:23px;
+}
+
+.brand h2 {
+  font-size:15px;
+  letter-spacing:.6px;
+}
+
+.brand p {
+  font-size:10px;
+  color:#c8d1ca;
+  margin-top:4px;
+  letter-spacing:1.2px;
+}
+
+nav {
+  display:flex;
+  align-items:center;
+  gap:25px;
+}
+
+nav a {
+  color:white;
+  text-decoration:none;
+  font-size:13px;
+  font-weight:600;
+}
+
+nav a:hover {
+  color:var(--gold);
+}
+
+.nav-button {
+  background:var(--gold);
+  color:var(--green);
+  border:0;
+  padding:11px 17px;
+  border-radius:4px;
+  font-weight:800;
+  font-size:12px;
+}
+
+/* HERO */
+
+.hero {
+  min-height:570px;
+  display:flex;
+  align-items:center;
+  padding:80px 9%;
+
+  background:
+    linear-gradient(90deg,rgba(7,29,19,.88),rgba(7,29,19,.35)),
+    url("https://images.unsplash.com/photo-1449158743715-0a90ebb6d2d8?auto=format&fit=crop&w=2000&q=85")
+    center/cover;
+}
+
+.hero-content {
+  max-width:690px;
+  color:white;
+}
+
+.eyebrow {
+  color:var(--gold);
+  font-size:12px;
+  font-weight:800;
+  letter-spacing:3px;
+}
+
+.hero h1 {
+  font-family:'Playfair Display',serif;
+  font-size:clamp(38px,6vw,68px);
+  line-height:1.12;
+  margin:22px 0;
+}
+
+.hero p {
+  max-width:570px;
+  color:#e1e6df;
+  line-height:1.9;
+  font-size:15px;
+}
+
+.hero-button {
+  display:inline-block;
+  background:var(--gold);
+  color:var(--green);
+  padding:15px 26px;
+  text-decoration:none;
+  font-weight:800;
+  border-radius:4px;
+  margin-top:28px;
+  font-size:13px;
+  transition:.2s;
+}
+
+.hero-button:hover {
+  background:white;
+  transform:translateY(-2px);
+}
+
+/* INTRODUCTION */
+
+.intro {
+  padding:65px 8%;
+  text-align:center;
+  background:white;
+}
+
+.intro h2 {
+  font-family:'Playfair Display',serif;
+  font-size:34px;
+  color:var(--green);
+  margin:12px 0;
+}
+
+.intro p {
+  max-width:760px;
+  margin:auto;
+  color:var(--muted);
+  font-size:14px;
+  line-height:1.9;
+}
+
+/* SECTION */
+
+.container {
+  width:min(1200px,90%);
+  margin:auto;
+}
+
+.section {
+  padding:75px 0;
+}
+
+.section-title {
+  margin-bottom:35px;
+}
+
+.section-title h2 {
+  font-family:'Playfair Display',serif;
+  font-size:38px;
+  color:var(--green);
+  margin:12px 0;
+}
+
+.section-title p {
+  color:var(--muted);
+  line-height:1.8;
+  font-size:14px;
+}
+
+/* SEARCH PANEL */
+
+.search-panel {
+  background:white;
+  padding:25px;
+  display:grid;
+  grid-template-columns:1fr 1fr 1fr auto;
+  gap:16px;
+  border-radius:9px;
+  border:1px solid var(--border);
+  margin-bottom:40px;
+  box-shadow:0 8px 30px #10291f08;
+}
+
+.field label {
+  display:block;
+  font-size:11px;
+  font-weight:800;
+  margin-bottom:9px;
+  color:#536158;
+  letter-spacing:.7px;
+  text-transform:uppercase;
+}
+
+.field input,.field select {
+  width:100%;
+  padding:13px;
+  border:1px solid var(--border);
+  background:white;
+  border-radius:5px;
+  outline:none;
+}
+
+.field input:focus,.field select:focus {
+  border-color:var(--gold);
+}
+
+.search-btn {
+  background:var(--green);
+  color:white;
+  border:0;
+  padding:13px 20px;
+  border-radius:5px;
+  font-weight:800;
+  align-self:end;
+  font-size:12px;
+}
+
+.search-btn:hover {
+  background:var(--green2);
+}
+
+/* BUNGALOW CARDS */
+
+.bungalow-grid {
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:25px;
+}
+
+.card {
+  background:white;
+  border:1px solid var(--border);
+  border-radius:9px;
+  overflow:hidden;
+  transition:.25s;
+}
+
+.card:hover {
+  transform:translateY(-5px);
+  box-shadow:0 15px 35px #10291f12;
+}
+
+.card-image {
+  height:225px;
+  position:relative;
+  background:#294536;
+  background-size:cover;
+  background-position:center;
+}
+
+.card-image::after {
+  content:"";
+  position:absolute;
+  inset:0;
+  background:linear-gradient(transparent 45%,rgba(0,0,0,.55));
+}
+
+.image-label {
+  position:absolute;
+  bottom:17px;
+  left:18px;
+  z-index:1;
+  color:white;
+  font-size:11px;
+  font-weight:800;
+  letter-spacing:1.5px;
+}
+
+.card-content {
+  padding:22px;
+}
+
+.card-content h3 {
+  font-family:'Playfair Display',serif;
+  color:var(--green);
+  font-size:22px;
+  margin-bottom:8px;
+  line-height:1.3;
+}
+
+.location {
+  color:var(--muted);
+  font-size:13px;
+  margin-bottom:16px;
+}
+
+.description {
+  color:#727d74;
+  font-size:13px;
+  line-height:1.8;
+  min-height:48px;
+}
+
+.facilities {
+  display:flex;
+  flex-wrap:wrap;
+  gap:12px;
+  padding:17px 0;
+  border-bottom:1px solid var(--border);
+  border-top:1px solid var(--border);
+  margin-top:16px;
+}
+
+.facilities span {
+  font-size:11px;
+  color:#58645b;
+}
+
+.price-heading {
+  font-size:11px;
+  color:var(--muted);
+  font-weight:800;
+  margin-bottom:10px;
+  letter-spacing:.6px;
+}
+
+.price-row {
+  display:flex;
+  justify-content:space-between;
+  gap:8px;
+  font-size:12px;
+  padding:6px 0;
+}
+
+.price-row strong {
+  color:var(--green);
+}
+
+.card-bottom {
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  margin-top:16px;
+  padding-top:15px;
+  border-top:1px solid var(--border);
+}
+
+.availability {
+  font-size:11px;
+  font-weight:800;
+  padding:7px 11px;
+  border-radius:20px;
+}
+
+.available {
+  background:#e4f3e7;
+  color:#26733e;
+}
+
+.booked {
+  background:#fae4e1;
+  color:#b23b36;
+}
+
+.unknown {
+  background:#f2eee2;
+  color:#866b2f;
+}
+
+.details-btn {
+  border:0;
+  background:var(--green);
+  color:white;
+  padding:11px 14px;
+  border-radius:4px;
+  font-size:11px;
+  font-weight:800;
+}
+
+/* AVAILABILITY INFORMATION */
+
+.availability-info {
+  margin-top:35px;
+  padding:22px;
+  background:#fff9eb;
+  border-left:4px solid var(--gold);
+  font-size:13px;
+  line-height:1.8;
+  color:#655a43;
+}
+
+/* PRICE INFORMATION */
+
+.price-section {
+  background:white;
+}
+
+.price-table {
+  width:100%;
+  border-collapse:collapse;
+  background:white;
+  margin-top:25px;
+  font-size:13px;
+}
+
+.price-table th,.price-table td {
+  border:1px solid var(--border);
+  padding:15px;
+  text-align:left;
+}
+
+.price-table th {
+  background:var(--green);
+  color:white;
+}
+
+.price-table tr:nth-child(even) {
+  background:#f8f8f4;
+}
+
+/* FOOTER */
+
+footer {
+  background:var(--green);
+  color:white;
+  padding:55px 8% 25px;
+}
+
+.footer-grid {
+  display:grid;
+  grid-template-columns:2fr 1fr;
+  gap:40px;
+}
+
+footer h3 {
+  font-family:'Playfair Display',serif;
+  margin-bottom:15px;
+}
+
+footer p {
+  font-size:13px;
+  color:#c3cec5;
+  line-height:1.9;
+}
+
+footer a {
+  color:var(--gold);
+  text-decoration:none;
+}
+
+.copyright {
+  border-top:1px solid #ffffff22;
+  padding-top:20px;
+  margin-top:35px;
+  text-align:center;
+  font-size:11px;
+  color:#aab9ad;
+}
+
+/* DETAILS MODAL */
+
+.modal {
+  position:fixed;
+  inset:0;
+  background:#0009;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  padding:15px;
+  z-index:200;
+}
+
+.modal-box {
+  background:white;
+  width:min(500px,100%);
+  max-height:90vh;
+  overflow:auto;
+  border-radius:10px;
+  padding:27px;
+}
+
+.modal-header {
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  margin-bottom:20px;
+}
+
+.modal-header h2 {
+  font-family:'Playfair Display',serif;
+  color:var(--green);
+}
+
+.close-btn {
+  border:0;
+  background:#edf0eb;
+  border-radius:50%;
+  width:32px;
+  height:32px;
+}
+
+.modal-box p {
+  font-size:13px;
+  line-height:1.8;
+  color:var(--muted);
+}
+
+.modal-prices {
+  margin-top:20px;
+  background:var(--cream);
+  padding:18px;
+  border-radius:6px;
+}
+
+.modal-prices div {
+  display:flex;
+  justify-content:space-between;
+  padding:8px 0;
+  font-size:13px;
+}
+
+.hidden {
+  display:none!important;
+}
+
+/* RESPONSIVE DESIGN */
+
+@media(max-width:900px) {
+  .bungalow-grid {
+    grid-template-columns:repeat(2,1fr);
+  }
+
+  .search-panel {
+    grid-template-columns:1fr 1fr;
+  }
+
+  .search-btn {
+    grid-column:1/-1;
+  }
+}
+
+@media(max-width:600px) {
+  header {
+    padding:13px 5%;
+  }
+
+  .brand h2 {
+    font-size:12px;
+  }
+
+  .brand p {
+    font-size:8px;
+  }
+
+  .brand-logo {
+    width:39px;
+    height:39px;
+  }
+
+  nav {
+    gap:10px;
+  }
+
+  nav a {
+    display:none;
+  }
+
+  .nav-button {
+    padding:10px;
+    font-size:10px;
+  }
+
+  .hero {
+    min-height:480px;
+    padding:55px 7%;
+  }
+
+  .hero h1 {
+    font-size:42px;
+  }
+
+  .intro {
+    padding:45px 7%;
+  }
+
+  .intro h2 {
+    font-size:27px;
+  }
+
+  .container {
+    width:90%;
+  }
+
+  .section {
+    padding:50px 0;
+  }
+
+  .section-title h2 {
+    font-size:30px;
+  }
+
+  .bungalow-grid {
+    grid-template-columns:1fr;
+  }
+
+  .search-panel {
+    grid-template-columns:1fr;
+    padding:17px;
+  }
+
+  .search-btn {
+    grid-column:auto;
+  }
+
+  .footer-grid {
+    grid-template-columns:1fr;
+  }
+
+  .price-table {
+    font-size:11px;
+  }
+
+  .price-table th,.price-table td {
+    padding:9px;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<!-- NAVIGATION -->
+
+<header>
+  <div class="brand">
+    <div class="brand-logo">✦</div>
+    <div>
+      <h2>SRI LANKA ARMY SIGNAL CORPS</h2>
+      <p>HOLIDAY BUNGALOWS</p>
+    </div>
+  </div>
+
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#bungalows">Bungalows</a>
+    <a href="#prices">Prices</a>
+    <a href="#contact">Contact</a>
+    <button class="nav-button" onclick="location.href='#bungalows'">
+      CHECK AVAILABILITY
+    </button>
+  </nav>
+</header>
+
+
+<!-- HERO SECTION -->
+
+<section class="hero" id="home">
+  <div class="hero-content">
+    <div class="eyebrow">SRI LANKA ARMY SIGNAL CORPS</div>
+
+    <h1>Discover Your Perfect Holiday Escape</h1>
+
+    <p>
+      Explore the holiday accommodation facilities of the Sri Lanka Army
+      Signal Corps. Discover beautiful destinations, comfortable
+      accommodation and available facilities across Sri Lanka.
+    </p>
+
+    <a href="#bungalows" class="hero-button">
+      EXPLORE OUR BUNGALOWS →
+    </a>
+  </div>
+</section>
+
+
+<!-- INTRODUCTION -->
+
+<section class="intro" id="about">
+  <div class="eyebrow">WELCOME</div>
+
+  <h2>Experience Comfort Across Sri Lanka</h2>
+
+  <p>
+    Welcome to the Sri Lanka Army Signal Corps Holiday Bungalows
+    information portal. Explore our accommodation facilities,
+    discover their locations, review accommodation prices and
+    check booking availability for your preferred dates.
+  </p>
+</section>
+
+
+<!-- BUNGALOW SECTION -->
+
+<section class="section container" id="bungalows">
+
+  <div class="section-title">
+    <div class="eyebrow">ACCOMMODATION FACILITIES</div>
+
+    <h2>Our Holiday Bungalows</h2>
+
+    <p>
+      Discover our accommodation facilities in different
+      destinations across Sri Lanka.
+    </p>
+  </div>
+
+
+  <!-- DATE SEARCH -->
+
+  <div class="search-panel">
+
+    <div class="field">
+      <label>Arrival Date</label>
+      <input type="date" id="arrivalDate">
+    </div>
+
+    <div class="field">
+      <label>Departure Date</label>
+      <input type="date" id="departureDate">
+    </div>
+
+    <div class="field">
+      <label>Select Location</label>
+
+      <select id="locationFilter">
+        <option value="">All Locations</option>
+        <option value="Diyathalawa">Diyathalawa</option>
+        <option value="Kandy">Kandy</option>
+        <option value="Anuradhapura">Anuradhapura</option>
+        <option value="Kilinochchi">Kilinochchi</option>
+        <option value="Minneriya">Minneriya</option>
+        <option value="Padukka">Padukka</option>
+      </select>
+    </div>
+
+    <button class="search-btn" onclick="searchAvailability()">
+      CHECK AVAILABILITY
+    </button>
+
+  </div>
+
+
+  <!-- BUNGALOW CARDS -->
+
+  <div class="bungalow-grid" id="bungalowGrid"></div>
+
+
+  <div class="availability-info">
+    <strong>Booking Information</strong><br>
+    The availability information displayed on this website
+    is intended for public viewing. Personal information
+    relating to officers and civilian guests is not displayed.
+    Please contact the authorized booking office for
+    reservation confirmation.
+  </div>
+
+</section>
+
+
+<!-- PRICE TABLE -->
+
+<section class="section price-section" id="prices">
+  <div class="container">
+
+    <div class="section-title">
+      <div class="eyebrow">ACCOMMODATION RATES</div>
+
+      <h2>Published Accommodation Prices</h2>
+
+      <p>
+        Review the accommodation rates according to the
+        applicable booking categories.
+      </p>
+    </div>
+
+    <div style="overflow-x:auto">
+      <table class="price-table">
+
+        <thead>
+          <tr>
+            <th>Accommodation</th>
+            <th>SLSC</th>
+            <th>Other Regiments</th>
+            <th>Civilians</th>
+          </tr>
+        </thead>
+
+        <tbody id="priceTableBody"></tbody>
+
+      </table>
+    </div>
+
+    <div class="availability-info">
+      Prices shown are initial reference rates based on
+      publicly published information. Confirm current rates,
+      eligibility and applicable conditions with the
+      authorized booking office.
+    </div>
+
+  </div>
+</section>
+
+
+<!-- FOOTER -->
+
+<footer id="contact">
+
+  <div class="footer-grid">
+
+    <div>
+      <h3>SRI LANKA ARMY SIGNAL CORPS</h3>
+
+      <p>
+        Holiday Bungalows Information Portal.
+        Explore accommodation facilities and booking
+        availability across Sri Lanka.
+      </p>
+
+      <p style="margin-top:15px">
+        Official Website:
+        <a href="https://alt.army.lk/signaller/holiday-bungalows"
+           target="_blank" rel="noopener">
+          Sri Lanka Army Signal Corps
+        </a>
+      </p>
+    </div>
+
+    <div>
+      <h3>QUICK LINKS</h3>
+
+      <p><a href="#home">Home</a></p>
+      <p><a href="#bungalows">Holiday Bungalows</a></p>
+      <p><a href="#prices">Accommodation Prices</a></p>
+      <p><a href="#contact">Contact</a></p>
+    </div>
+
+  </div>
+
+  <div class="copyright">
+    © 2026 Sri Lanka Army Signal Corps.
+    Holiday Bungalows Information Portal.
+  </div>
+
+</footer>
+
+
+<!-- BUNGALOW DETAILS MODAL -->
+
+<div class="modal hidden" id="detailsModal">
+
+  <div class="modal-box">
+
+    <div class="modal-header">
+      <h2 id="modalTitle">Bungalow Details</h2>
+
+      <button class="close-btn" onclick="closeModal()">✕</button>
+    </div>
+
+    <p id="modalLocation"></p>
+    <p id="modalDescription" style="margin-top:12px"></p>
+    <p id="modalFacilities" style="margin-top:12px"></p>
+
+    <div class="modal-prices" id="modalPrices"></div>
+
+    <p style="margin-top:18px">
+      For official reservation confirmation, contact the
+      authorized booking office.
+    </p>
+
+  </div>
+
+</div>
+
+
+<script type="module">
+
+/* ===========================================
+   FIREBASE CONNECTION
+   Add your Firebase project configuration.
+=========================================== */
+
+import { initializeApp } from
+"https://www.gstatic.com/firebasejs/10.14.1/firebase-app.js";
+
+import {
+ getFirestore,
+ collection,
+ getDocs
+} from
+"https://www.gstatic.com/firebasejs/10.14.1/firebase-firestore.js";
+
+
+const firebaseConfig = {
+ apiKey: "YOUR_API_KEY",
+ authDomain: "YOUR_PROJECT.firebaseapp.com",
+ projectId: "YOUR_PROJECT_ID",
+ storageBucket: "YOUR_PROJECT.firebasestorage.app",
+ messagingSenderId: "YOUR_SENDER_ID",
+ appId: "YOUR_APP_ID"
+};
+
+const app = initializeApp(firebaseConfig);
+const db = getFirestore(app);
+
+
+/* ===========================================
+   BUNGALOW INFORMATION
+
+   Initial reference data.
+   Replace rates after official verification.
+=========================================== */
+
+const sampleBungalows = [
+
+{
+ id:"mercury-ground",
+ name:"Mercury House - Ground Floor Dormitory",
+ location:"Diyathalawa",
+ type:"Non AC Dormitory",
+ rooms:"20 Beds",
+ description:"Ground floor dormitory accommodation.",
+ facilities:"Dormitory accommodation",
+ prices:{SLSC:5000,OTHER_ARMY:10000,CIVILIAN:15000},
+ image:"https://images.unsplash.com/photo-1449158743715-0a90ebb6d2d8?auto=format&fit=crop&w=900&q=80"
+},
+
+{
+ id:"mercury-first",
+ name:"Mercury House - First Floor",
+ location:"Diyathalawa",
+ type:"AC / Non AC Rooms",
+ rooms:"3 Rooms",
+ description:"Three-room accommodation facility.",
+ facilities:"2 AC Rooms and 1 Non AC Room",
+ prices:{SLSC:3000,OTHER_ARMY:6000,CIVILIAN:15000},
+ image:"https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=900&q=80"
+},
+
+{
+ id:"mercury-suite",
+ name:"Mercury House - Third Floor Suite",
+ location:"Diyathalawa",
+ type:"AC Suite",
+ rooms:"1 Suite",
+ description:"Super luxury suite accommodation. Eligibility restrictions may apply.",
+ facilities:"Air-conditioned suite",
+ prices:{SLSC:5000,OTHER_ARMY:10000,CIVILIAN:20000},
+ image:"https://images.unsplash.com/photo-1611892440504-42a792e24d32?auto=format&fit=crop&w=900&q=80"
+},
+
+{
+ id:"kandy-knuckles",
+ name:"Knuckles View",
+ location:"Kandy",
+ type:"AC Accommodation",
+ rooms:"3 Rooms",
+ description:"Holiday accommodation at the School of Signals premises.",
+ facilities:"Air-conditioned rooms",
+ prices:{SLSC:3000,OTHER_ARMY:6000,CIVILIAN:8000},
+ image:"https://images.unsplash.com/photo-1449158743715-0a90ebb6d2d8?auto=format&fit=crop&w=900&q=80"
+},
+
+{
+ id:"kandy-breezy",
+ name:"Breezy Cottage",
+ location:"Kandy",
+ type:"AC Room",
+ rooms:"1 Room",
+ description:"Comfortable cottage accommodation.",
+ facilities:"Air-conditioned room",
+ prices:{SLSC:2000,OTHER_ARMY:4000,CIVILIAN:7500},
+ image:"https://images.unsplash.com/photo-1613977257363-707ba9348227?auto=format&fit=crop&w=900&q=80"
+},
+
+{
+ id:"anu-new",
+ name:"Anuradhapura - New Bungalow",
+ location:"Anuradhapura",
+ type:"AC Rooms",
+ rooms:"3 Rooms",
+ description:"New bungalow accommodation in Anuradhapura.",
+ facilities:"3 AC Rooms",
+ prices:{SLSC:3000,OTHER_ARMY:6000,CIVILIAN:12000},
+ image:"https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=900&q=80"
+},
+
+{
+ id:"anu-old",
+ name:"Anuradhapura - Old Bungalow",
+ location:"Anuradhapura",
+ type:"AC / Non AC Rooms",
+ rooms:"3 Rooms",
+ description:"Old bungalow accommodation facility.",
+ facilities:"2 AC Rooms and 1 Non AC Room",
+ prices:{SLSC:2000,OTHER_ARMY:4000,CIVILIAN:8000},
+ image:"https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=900&q=80"
+},
+
+{
+ id:"anu-dormitory",
+ name:"Anuradhapura - Dormitory",
+ location:"Anuradhapura",
+ type:"Non AC Dormitory",
+ rooms:"14 Beds",
+ description:"Dormitory accommodation facility.",
+ facilities:"Non AC Dormitory",
+ prices:{SLSC:2500,OTHER_ARMY:5000,CIVILIAN:8500},
+ image:"https://images.unsplash.com/photo-1611892440504-42a792e24d32?auto=format&fit=crop&w=900&q=80"
+},
+
+{
+ id:"kilinochchi-officers",
+ name:"Officers' Cabana",
+ location:"Kilinochchi",
+ type:"AC Accommodation",
+ rooms:"3 Rooms",
+ description:"Officers' cabana accommodation.",
+ facilities:"3 AC Rooms",
+ prices:{SLSC:1500,OTHER_ARMY:2500,CIVILIAN:3500},
+ image:"https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=900&q=80"
+},
+
+{
+ id:"kilinochchi-ors",
+ name:"ORs' Cabana",
+ location:"Kilinochchi",
+ type:"Non AC Cabana",
+ rooms:"3 Units",
+ description:"Other Ranks cabana accommodation.",
+ facilities:"Non AC accommodation",
+ prices:{SLSC:2000,OTHER_ARMY:3000,CIVILIAN:4000},
+ image:"https://images.unsplash.com/photo-1449158743715-0a90ebb6d2d8?auto=format&fit=crop&w=900&q=80"
+},
+
+{
+ id:"minneriya",
+ name:"Miridiya Pawana",
+ location:"Minneriya",
+ type:"Non AC Rooms",
+ rooms:"3 Rooms",
+ description:"Holiday bungalow near the beautiful Minneriya Reservoir.",
+ facilities:"3 Non AC Rooms",
+ prices:{SLSC:5000,OTHER_ARMY:10000,CIVILIAN:25000},
+ image:"https://images.unsplash.com/photo-1449158743715-0a90ebb6d2d8?auto=format&fit=crop&w=900&q=80"
+},
+
+{
+ id:"padukka-pool",
+ name:"Mercury Club House - Pool Site Room",
+ location:"Padukka",
+ type:"AC Room",
+ rooms:"1 Room",
+ description:"Pool site accommodation.",
+ facilities:"Air-conditioned room",
+ prices:{SLSC:1500,OTHER_ARMY:2500,CIVILIAN:3000},
+ image:"https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=900&q=80"
+},
+
+{
+ id:"padukka-cabana",
+ name:"Mercury Club House - Cabana",
+ location:"Padukka",
+ type:"AC Cabana",
+ rooms:"3 Units",
+ description:"Cabana accommodation at Mercury Club House.",
+ facilities:"Air-conditioned cabana",
+ prices:{SLSC:3000,OTHER_ARMY:5000,CIVILIAN:7500},
+ image:"https://images.unsplash.com/photo-1613977257363-707ba9348227?auto=format&fit=crop&w=900&q=80"
+}
+
+];
+
+
+/* ===========================================
+   STATE
+=========================================== */
+
+let bungalows=[...sampleBungalows];
+let availability=[];
+let firebaseReady=false;
+
+
+/* ===========================================
+   HELPER FUNCTIONS
+=========================================== */
+
+const money = value =>
+ "Rs. "+Number(value||0).toLocaleString("en-LK");
+
+const escapeHTML = value =>
+ String(value??"").replace(/[&<>"']/g,c=>({
+ "&":"&amp;","<":"&lt;",">":"&gt;",
+ '"':"&quot;","'":"&#039;"
+ })[c]);
+
+
+/* ===========================================
+   FIREBASE DATA LOADING
+=========================================== */
+
+async function loadFirebaseData() {
+
+ try {
+
+  const bungalowSnapshot=await getDocs(
+   collection(db,"bungalows")
+  );
+
+  if(!bungalowSnapshot.empty) {
+   bungalows=bungalowSnapshot.docs.map(d=>({
+    id:d.id,...d.data()
+   }));
+  }
+
+  const availabilitySnapshot=await getDocs(
+   collection(db,"publicAvailability")
+  );
+
+  availability=availabilitySnapshot.docs.map(d=>({
+   id:d.id,...d.data()
+  }));
+
+  firebaseReady=true;
+
+ } catch(error) {
+
+  console.error("Firebase loading error:",error);
+
+  firebaseReady=false;
+
+ }
+
+ renderBungalows();
+
+}
+
+
+/* ===========================================
+   CHECK AVAILABILITY
+=========================================== */
+
+function validDates(start,end) {
+
+ return start && end && end>start;
+
+}
+
+function isBooked(id,start,end) {
+
+ if(!firebaseReady || !validDates(start,end)) {
+  return null;
+ }
+
+ return availability.some(item=>
+  item.bungalowId===id &&
+  item.status==="confirmed" &&
+  start<item.departure &&
+  end>item.arrival
+ );
+
+}
+
+
+/* ===========================================
+   DISPLAY BUNGALOW CARDS
+=========================================== */
+
+function renderBungalows() {
+
+ const grid=document.getElementById("bungalowGrid");
+
+ const start=document.getElementById("arrivalDate").value;
+ const end=document.getElementById("departureDate").value;
+
+ const location=document.getElementById("locationFilter").value;
+
+ const filtered=bungalows.filter(b=>
+  !location || b.location===location
+ );
+
+ if(!filtered.length) {
+
+  grid.innerHTML="<p>No accommodation information found.</p>";
+  return;
+
+ }
+
+ grid.innerHTML=filtered.map(b=>{
+
+  const booked=isBooked(b.id,start,end);
+
+  let status="Select dates";
+  let statusClass="unknown";
+
+  if(validDates(start,end)) {
+
+   if(booked===null) {
+    status="Availability unavailable";
+    statusClass="unknown";
+   } else if(booked) {
+    status="Booked";
+    statusClass="booked";
+   } else {
+    status="Available";
+    statusClass="available";
+   }
+
+  }
+
+  return `
+
+  <article class="card">
+
+    <div class="card-image"
+      style="background-image:url('${escapeHTML(b.image)}')">
+
+      <div class="image-label">
+        SRI LANKA SIGNAL CORPS
+      </div>
+
+    </div>
+
+    <div class="card-content">
+
+      <span class="availability ${statusClass}">
+        ${status}
+      </span>
+
+      <h3>${escapeHTML(b.name)}</h3>
+
+      <div class="location">
+        📍 ${escapeHTML(b.location)}
+      </div>
+
+      <p class="description">
+        ${escapeHTML(b.description)}
+      </p>
+
+      <div class="facilities">
+
+        <span>🛏 ${escapeHTML(b.rooms)}</span>
+
+        <span>🏠 ${escapeHTML(b.type)}</span>
+
+      </div>
+
+      <div style="margin-top:17px">
+
+        <div class="price-heading">
+          DAILY ACCOMMODATION RATES
+        </div>
+
+        <div class="price-row">
+          <span>SLSC</span>
+          <strong>${money(b.prices?.SLSC)}</strong>
+        </div>
+
+        <div class="price-row">
+          <span>Other Regiments</span>
+          <strong>${money(b.prices?.OTHER_ARMY)}</strong>
+        </div>
+
+        <div class="price-row">
+          <span>Civilian</span>
+          <strong>${money(b.prices?.CIVILIAN)}</strong>
+        </div>
+
+      </div>
+
+      <div class="card-bottom">
+
+        <span class="availability ${statusClass}">
+          ${status}
+        </span>
+
+        <button class="details-btn"
+          onclick="showDetails('${b.id}')">
+
+          VIEW DETAILS
+
+        </button>
+
+      </div>
+
+    </div>
+
+  </article>
+
+  `;
+
+ }).join("");
+
+ renderPriceTable();
+
+}
+
+
+/* ===========================================
+   AVAILABILITY SEARCH
+=========================================== */
+
+window.searchAvailability=function() {
+
+ const start=document.getElementById("arrivalDate").value;
+ const end=document.getElementById("departureDate").value;
+
+ if(start && end && !validDates(start,end)) {
+
+  alert("Departure date must be after arrival date.");
+  return;
+
+ }
+
+ if((start && !end) || (!start && end)) {
+
+  alert("Please select both arrival and departure dates.");
+  return;
+
+ }
+
+ renderBungalows();
+
+ document.getElementById("bungalows").scrollIntoView({
+  behavior:"smooth"
+ });
+
+};
+
+
+/* ===========================================
+   BUNGALOW DETAILS
+=========================================== */
+
+window.showDetails=function(id) {
+
+ const b=bungalows.find(x=>x.id===id);
+
+ if(!b) return;
+
+ document.getElementById("modalTitle").textContent=b.name;
+
+ document.getElementById("modalLocation").textContent=
+ "Location: "+b.location;
+
+ document.getElementById("modalDescription").textContent=
+ b.description;
+
+ document.getElementById("modalFacilities").textContent=
+ "Accommodation: "+b.type+" | "+b.rooms;
+
+ document.getElementById("modalPrices").innerHTML=`
+
+  <h4 style="color:#10291f;margin-bottom:12px">
+    Accommodation Prices
+  </h4>
+
+  <div>
+    <span>SLSC</span>
+    <strong>${money(b.prices?.SLSC)}</strong>
+  </div>
+
+  <div>
+    <span>Other Regiments</span>
+    <strong>${money(b.prices?.OTHER_ARMY)}</strong>
+  </div>
+
+  <div>
+    <span>Civilian</span>
+    <strong>${money(b.prices?.CIVILIAN)}</strong>
+  </div>
+
+ `;
+
+ document.getElementById("detailsModal").classList.remove("hidden");
+
+};
+
+window.closeModal=function() {
+
+ document.getElementById("detailsModal").classList.add("hidden");
+
+};
+
+
+/* ===========================================
+   PRICE TABLE
+=========================================== */
+
+function renderPriceTable() {
+
+ const body=document.getElementById("priceTableBody");
+
+ body.innerHTML=bungalows.map(b=>`
+
+  <tr>
+
+    <td>${escapeHTML(b.name)}</td>
+
+    <td>${money(b.prices?.SLSC)}</td>
+
+    <td>${money(b.prices?.OTHER_ARMY)}</td>
+
+    <td>${money(b.prices?.CIVILIAN)}</td>
+
+  </tr>
+
+ `).join("");
+
+}
+
+
+/* ===========================================
+   DATE RESTRICTIONS
+=========================================== */
+
+const today=new Date().toLocaleDateString("en-CA");
+
+document.getElementById("arrivalDate").min=today;
+document.getElementById("departureDate").min=today;
+
+document.getElementById("arrivalDate").addEventListener("change",e=>{
+
+ document.getElementById("departureDate").min=e.target.value;
+
+});
+
+document.getElementById("locationFilter").addEventListener("change",renderBungalows);
+
+
+/* ===========================================
+   START WEBSITE
+=========================================== */
+
+renderBungalows();
+loadFirebaseData();
+
+</script>
+
+</body>
+</html>
